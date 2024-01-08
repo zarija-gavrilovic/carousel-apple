@@ -1,0 +1,19 @@
+<main
+  (touchstart)="touchStart($event)"
+  (touchend)="touchEnd($event)"
+  (touchmove)="touchMove($event)"
+  (scroll)="scroll($event)"
+  >
+  <div class="carousel-main" #carouselMain>
+    <div class="carousel-card">Card 1</div>
+    <div class="carousel-card">Card 2</div>
+    <div class="carousel-card">Card 3</div>
+    <div class="carousel-card">Card 4</div>
+    <div class="carousel-card">Card 5</div>
+    <div class="carousel-card">Card 6</div>
+  </div>
+</main>
+<footer>
+  <button (click)="scrollLeft()">Left</button>
+  <button (click)="scrollRight()">Right</button>
+</footer>
